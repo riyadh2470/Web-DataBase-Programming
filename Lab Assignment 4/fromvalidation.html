@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Second</title>
+<style>
+
+
+
+#logo{
+   height: 150px;
+   width:20%;
+   background-color:#2DB567;
+   left:0px;
+   top:0px;
+   position:absolute;
+   border:FFFFFF solid 2px;	
+	
+}
+
+#banner{
+   height: 150px;
+   width:80%;
+   background-color:#391493;
+   right:0px;
+
+   top:0px;
+   position:absolute;
+   border:FFFFFF solid 2px;
+}
+
+#menu{
+   height: 50px;
+   width:100%;
+   background-color:#00FF7F;
+   left:0px;
+   top:150px;
+   position:absolute;
+   border:FFFFFF solid 2px;
+}
+
+#leftbar{
+        top: 200px;
+        left: 0px;
+        height: 800px;
+        width: 20%;
+        background-color : #1C703A;
+        position: absolute;
+        border: FFFFFF solid 2px;
+		text-align:center;
+}
+#rightbar{
+        top: 200px;
+        right: 0px;
+        height: 800px;
+        width: 20%;
+        background-color : #1C703A;
+        position: absolute;
+        border: FFFFFF solid 2px;
+text-align:center;
+}
+
+#cont{
+        top: 200px;
+        left: 20%;
+	    right:20%;
+        height:800px;
+        width: 60%;
+        background-color : white;
+        position: absolute;
+        border: FFFFFF solid 2px;
+}
+#contlt{
+        top: 0px;
+        left: 0px;
+        height:50px;
+        width: 50%;
+        background-color : #FFFFFF;
+        position: absolute;
+        border: FFFFFF solid 2px;
+}
+
+#contrt{
+        top: 0px;
+        right: 0px;
+        height:50x;
+        width: 30%;
+        background-color : #A819C8;
+        position: absolute;
+        border: FFFFFF solid 2px;
+}
+#contld{
+        top: 200px;
+        left: 0px;
+        height:50px;
+        width: 50%;
+        background-color : #FFFFFF;
+        position: absolute;
+        border: FFFFFF solid 2px;
+}
+#contrd{
+        top: 200px;
+        right: 0px;
+        height:50px;
+        width: 50%;
+        background-color : #FFFFFF;
+        position: absolute;
+        border: FFFFFF solid 2px;
+}
+
+#footer{
+    height:50px;
+   width:100%;
+   background-color:#731314;
+   left:0px;
+   top:1000px;
+   position:absolute;
+   border:FFFFFF solid 2px;
+}
+
+#footercont{
+    height: 50px;
+   width:70%;
+   background-color:#1D85B7;
+   left:0px;
+   top:0px;
+   position:absolute;
+   border:FFFFFF solid 2px;
+}
+#icon{
+    height: 50px;
+   width:30%;
+   background-color:#1D85B7;
+   right:0px;
+   top:0px;
+   position:absolute;
+   border:FFFFFF solid 2px;
+}
+#icon img{ height:50px; width:32%;	border-radius:70%;
+}
+
+
+
+ul{ list-style:none; text-align:center;
+
+}
+ul li { display:inline; text-align:center; margin-left:50px;}
+
+/* unvisited link */
+a:link {
+  color: #9B1363;
+  text-decoration:none;
+  transition: linear 0.3s;
+  
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: #000000;
+  background-color:#A819C8;
+  border-radius:50%;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/* CSS Document */
+</style>
+
+
+
+
+</head>
+
+
+<body>
+<div id="logo">
+<img src="img/logo.png" height="150px" width="100%" />
+
+ </div>
+<div id="banner"><img src="img/b1.png" height="150px" width="100%" />
+</div>
+<div id="menu"> 
+<ul>
+<li><a href="home.html">Home|</a></li>
+<li><a href="contact.html">Contact|</a></li>
+<li><a href="signup.html">Sign up</a></li>
+<li><a href="login.html">Log in</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+
+</ul>
+</div>
+
+<div id = "leftbar"> 
+<p><a href="home.html">Home</a></P>
+<p><a href="contact.html">Contact</a></p>
+<p> About </p>
+<p> Call </p> </div>
+
+<div id="cont">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1 class="text-white text-center font-weight-bold bg-success" style="font-size: 55px;"> Form Validation</h1>
+
+	<div class="container"><br>
+		
+		<div class="col-lg-6 m-auto d-block">
+			
+			<form action="#" onsubmit="return validation()" class="bg-light">
+				
+				<div class="form-group">
+					<label for="user" class="font-weight-bold"> Username: </label>
+					<input type="text" name="user" class="form-control" id="user" autocomplete="off">
+					<span id="username" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Password: </label>
+					<input type="text" name="pass" class="form-control" id="pass" autocomplete="off">
+					<span id="passwords" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Confirm Password: </label>
+					<input type="text" name="conpass" class="form-control" id="conpass" autocomplete="off">
+					<span id="confrmpass" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Mobile Number: </label>
+					<input type="text" name="mobile" class="form-control" id="mobileNumber" autocomplete="off">
+					<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> Email: </label>
+					<input type="text" name="email" class="form-control" id="emails" autocomplete="off">
+					<span id="emailids" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<input type="submit" name="submit" value="submit" class="btn btn-success" 	autocomplete="off">
+
+
+			</form><br><br>
+
+
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+
+		function validation(){
+
+			var user = document.getElementById('user').value;
+			var pass = document.getElementById('pass').value;
+			var confirmpass = document.getElementById('conpass').value;
+			var mobileNumber = document.getElementById('mobileNumber').value;
+			var emails = document.getElementById('emails').value;
+
+
+
+
+
+			if(user == ""){
+				document.getElementById('username').innerHTML =" ** Please fill the username field";
+				return false;
+			}
+			if((user.length <= 2) || (user.length > 20)) {
+				document.getElementById('username').innerHTML =" ** Username lenght must be between 2 and 20";
+				return false;	
+			}
+			if(!isNaN(user)){
+				document.getElementById('username').innerHTML =" ** only characters are allowed";
+				return false;
+			}
+
+
+
+
+
+
+
+			if(pass == ""){
+				document.getElementById('passwords').innerHTML =" ** Please fill the password field";
+				return false;
+			}
+			if((pass.length <= 5) || (pass.length > 20)) {
+				document.getElementById('passwords').innerHTML =" ** Passwords lenght must be between  5 and 20";
+				return false;	
+			}
+
+
+			if(pass!=confirmpass){
+				document.getElementById('confrmpass').innerHTML =" ** Password does not match the confirm password";
+				return false;
+			}
+
+
+
+			if(confirmpass == ""){
+				document.getElementById('confrmpass').innerHTML =" ** Please fill the confirmpassword field";
+				return false;
+			}
+
+
+
+
+			if(mobileNumber == ""){
+				document.getElementById('mobileno').innerHTML =" ** Please fill the mobile NUmber field";
+				return false;
+			}
+			if(isNaN(mobileNumber)){
+				document.getElementById('mobileno').innerHTML =" ** user must write digits only not characters";
+				return false;
+			}
+			if(mobileNumber.length!=10){
+				document.getElementById('mobileno').innerHTML =" ** Mobile Number must be 11 digits only";
+				return false;
+			}
+
+
+
+			if(emails == ""){
+				document.getElementById('emailids').innerHTML =" ** Please fill the email idx` field";
+				return false;
+			}
+			if(emails.indexOf('@') <= 0 ){
+				document.getElementById('emailids').innerHTML =" ** @ Invalid Position";
+				return false;
+			}
+
+			if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
+				document.getElementById('emailids').innerHTML =" ** . Invalid Position";
+				return false;
+			}
+		}
+
+	</script>        
+    
+</body>
+</html>
+</div>
+<div id = "rightbar"> 
+
+<p><u><big> Book List </big></u></p>
+<P><a href="math.html">Math</a></P>
+<P><a href="novel.html">Novel</a></P>
+
+
+
+
+
+</div>
+
+<div id = "footer">
+<div id ="footercont"><p> Design By @riyadhIt </p></div>
+<div id ="icon">
+<img src="img/f1.png" height="50px" width="33%"/>
+<img src="img/sky1.jpg" height="50px" width="30%" />
+<img src="img/in1.png" height="50px" width="30%" />
+
+
+</div>
+</body>
+</html>
